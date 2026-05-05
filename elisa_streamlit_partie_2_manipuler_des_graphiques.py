@@ -66,7 +66,7 @@ affichage_matrice = st.checkbox(label="Afficher la matrice de corrélation")
 # Affichage matrice corrélation
 if affichage_matrice == True :
   st.header("Ma matrice de corrélation")
-  correlation = df.corr()
+  correlation = df.corr(numeric_only=True)
   fig, ax = plt.subplots()
   sns.heatmap(correlation, annot=True)
   st.pyplot(fig)
