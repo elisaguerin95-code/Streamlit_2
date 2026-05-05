@@ -19,8 +19,6 @@ Il y aura également un bouton qui coché affiche la matrice de corrélation des
 Vous mettrez le code dans un notebook et partagerez le lien en lecture.
 """
 
-pip install streamlit
-
 import streamlit as st
 import seaborn as sns
 import pandas as pd
